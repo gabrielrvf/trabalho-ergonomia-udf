@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Memória dos Direitos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>Memória dos Direitos</h1>
+      <div class="stats">
+        <div>Tempo: <span id="timer">00:00</span></div>
+        <div>Movimentos: <span id="moves">0</span></div>
+        <div>Pares: <span id="matched">0</span>/<span id="totalPairs">0</span></div>
+      </div>
+    </header>
+
+    <section class="controls">
+      <button id="btnRestart">Reiniciar</button>
+      <button id="btnNewGame">Novo jogo (embaralhar)</button>
+    </section>
+
+    <section id="board" class="board" aria-live="polite"></section>
+
+    <div id="gameOver" class="modal hidden">
+      <div class="modal-content">
+        <h2>Você venceu! 🎉</h2>
+        <p>Tempo: <span id="finalTime"></span></p>
+        <p>Movimentos: <span id="finalMoves"></span></p>
+
+        <label for="playerName">Seu nome (para o ranking):</label>
+        <input id="playerName" type="text" placeholder="Ex: Gabriel" maxlength="24" />
+
+        <div class="modal-actions">
+          <button id="btnSaveScore">Salvar recorde</button>
+          <button id="btnCloseModal">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <aside class="leaderboard">
+      <h3>Ranking (Top 10)</h3>
+      <ol id="leaderboardList"></ol>
+      <!-- <small>Ordenado por tempo (menor) e depois por movimentos.</small> -->
+    </aside>
+
+    <footer class="footer">
+      <small>Atenção senhor professor gostoso, os créditos da ideia são do meu amigo/ficante Palatusi, Marcelu</small>
+    </footer>
+  </main>
+
+  <!-- Firebase Compat SDKs (substitua a versão se desejar) -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
