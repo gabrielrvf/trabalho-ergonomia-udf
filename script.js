@@ -28,18 +28,18 @@ auth.signInAnonymously().catch(err => {
 
 // ---------- Dados do jogo (pares: situação + direito) ----------
 const PAIRS = [
-  {id:'p1', situation: 'Pessoa autista tem prioridade em filas.', law: 'Pessoa autista tem prioridade em filas.'},
-  {id:'p2', situation: 'Lei Brasileira de Inclusão (Lei 13.146/2015).', law: 'Lei Brasileira de Inclusão (Lei 13.146/2015).'},
-  {id:'p3', situation: 'Acessibilidade em prédios públicos.', law: 'Acessibilidade em prédios públicos.'},
-  {id:'p4', situation: 'Normas técnicas e Constituição (art. 5º e 227).', law: 'Normas técnicas e Constituição (art. 5º e 227).'},
-  {id:'p5', situation: 'Pessoa com deficiência tem direito à educação inclusiva.', law: 'Pessoa com deficiência tem direito à educação inclusiva.'},
-  {id:'p6', situation: 'Lei 13.146/2015 — Educação inclusiva.', law: 'Lei 13.146/2015 — Educação inclusiva.'},
-  {id:'p7', situation: 'Direito ao transporte acessível.', law: 'Direito ao transporte acessível.'},
-  {id:'p8', situation: 'Estatuto da Pessoa com Deficiência e legislações municipais.', law: 'Estatuto da Pessoa com Deficiência e legislações municipais.'},
-  {id:'p9', situation: 'Recusa de atendimento especializado em saúde.', law: 'Recusa de atendimento especializado em saúde.'},
-  {id:'p10', situation: 'SUS e Lei 13.146/2015 — direito à saúde.', law: 'SUS e Lei 13.146/2015 — direito à saúde.'},
-  {id:'p11', situation: 'Discriminação no trabalho por deficiência.', law: 'Discriminação no trabalho por deficiência.'},
-  {id:'p12', situation: 'CLT + Lei de Cotas e Convenções internacionais.', law: 'CLT + Lei de Cotas e Convenções internacionais.'}
+  {id:'p1', situation: 'Passe livre em transporte interestadual. 🚍', law: 'Passe livre em transporte interestadual. 🚍'},
+  {id:'p2', situation: 'Inseção de imposto na compra de carro. 🚗', law: 'Inseção de imposto na compra de carro. 🚗'},
+  {id:'p3', situation: 'Acessibilidade em prédios públicos. ♿️', law: 'Acessibilidade em prédios públicos. ♿️'},
+  {id:'p4', situation: 'Desconto em eventos culturais. 🎭', law: 'Desconto em eventos culturais. 🎭'},
+  {id:'p5', situation: 'Desconto em eventos esportivos. ⚽️', law: 'Desconto em eventos esportivos. ⚽️'},
+  {id:'p6', situation: 'Prioridade em processos judiciais e administrativos. ⚖️', law: 'Prioridade em processos judiciais e administrativos. ⚖️'},
+  {id:'p7', situation: 'Atendimento prioritário. ⏳', law: 'Atendimento prioritário. ⏳'},
+  {id:'p8', situation: 'Isenção ou desconto em concursos públicos. 🎓', law: 'Isenção ou desconto em concursos públicos. 🎓'},
+  {id:'p9', situation: 'Prioridade em programas habitacionais. 🏠', law: 'Prioridade em programas habitacionais. 🏠'},
+  {id:'p10', situation: 'Desconto em medicamentos e tratamentos. 💊', law: 'Desconto em medicamentos e tratamentos. 💊'},
+  {id:'p11', situation: 'Gratuidade em transporte municipal/metropolitano. 🚌', law: 'Gratuidade em transporte municipal/metropolitano. 🚌'},
+  {id:'p12', situation: 'Isenção no pagamento de taxas de emissão de documentos. 📜', law: 'Isenção no pagamento de taxas de emissão de documentos. 📜'}
   // você pode adicionar/editar pares aqui
 ];
 

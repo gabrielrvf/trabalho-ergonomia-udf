@@ -22,6 +22,12 @@
       <button id="btnNewGame">Novo jogo (embaralhar)</button>
     </section>
 
+    <aside class="leaderboard">
+      <h3>Ranking (Top 10)</h3>
+      <ol id="leaderboardList"></ol>
+      <!-- <small>Ordenado por tempo (menor) e depois por movimentos.</small> -->
+    </aside>
+
     <section id="board" class="board" aria-live="polite"></section>
 
     <div id="gameOver" class="modal hidden">
@@ -40,15 +46,9 @@
       </div>
     </div>
 
-    <aside class="leaderboard">
-      <h3>Ranking (Top 10)</h3>
-      <ol id="leaderboardList"></ol>
-      <!-- <small>Ordenado por tempo (menor) e depois por movimentos.</small> -->
-    </aside>
-
-    <footer class="footer">
-      <small>Atenção senhor professor gostoso, os créditos da ideia são do meu amigo/ficante Palatusi, Marcelu</small>
-    </footer>
+    <!-- <footer class="footer">
+      <small>Versão 0.0.3</small>
+    </footer> -->
   </main>
 
   <!-- Firebase Compat SDKs (substitua a versão se desejar) -->
