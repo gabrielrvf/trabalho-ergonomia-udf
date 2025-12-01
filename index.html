@@ -9,7 +9,7 @@
 <body>
   <main class="container">
     <header class="header">
-      <h1>Memória dos Direitos</h1>
+      <h1>Ergonomia e Percepção Visual (D1)<br>Memória dos Direitos<br>Gabriel Rosa Vilarouca Farias (38766817)</h1>
       <div class="stats">
         <div>Tempo: <span id="timer">00:00</span></div>
         <div>Movimentos: <span id="moves">0</span></div>
@@ -20,9 +20,10 @@
     <section class="controls">
       <button id="btnRestart">Reiniciar</button>
       <button id="btnNewGame">Novo jogo (embaralhar)</button>
+      <button id="btnToggleLeaderboard" aria-expanded="false" aria-controls="leaderboard">Top jogadores</button>
     </section>
 
-    <aside class="leaderboard">
+    <aside id="leaderboard" class="leaderboard hidden" aria-hidden="true">
       <h3>Ranking (Top 10)</h3>
       <ol id="leaderboardList"></ol>
       <!-- <small>Ordenado por tempo (menor) e depois por movimentos.</small> -->
@@ -51,7 +52,7 @@
     </footer> -->
   </main>
 
-  <!-- Firebase Compat SDKs (substitua a versão se desejar) -->
+  <!-- Firebase  -->
   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>

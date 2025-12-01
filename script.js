@@ -60,6 +60,8 @@ const btnSaveScore = document.getElementById('btnSaveScore');
 const btnCloseModal = document.getElementById('btnCloseModal');
 
 const leaderboardList = document.getElementById('leaderboardList');
+const btnToggleLeaderboard = document.getElementById('btnToggleLeaderboard');
+const leaderboardEl = document.getElementById('leaderboard');
 
 // ---------- Estado do jogo ----------
 let deck = []; // cartas embaralhadas
@@ -362,6 +364,21 @@ async function fetchLeaderboard() {
 // Start
 startGame(true);
 fetchLeaderboard();
+
+// Toggle da leaderboard: mostra / esconde e atualiza aria-expanded
+if (btnToggleLeaderboard && leaderboardEl) {
+  btnToggleLeaderboard.addEventListener('click', () => {
+    const wasHidden = leaderboardEl.classList.toggle('hidden');
+    // btn aria
+    btnToggleLeaderboard.setAttribute('aria-expanded', (!wasHidden).toString());
+    leaderboardEl.setAttribute('aria-hidden', wasHidden.toString());
+    btnToggleLeaderboard.textContent = wasHidden ? 'Top jogadores' : 'Fechar ranking';
+    if (!wasHidden) {
+      // atualizar lista sempre que abrir
+      fetchLeaderboard();
+    }
+  });
+}
 
 /* Optional: allow pressing Enter to flip focused card (keyboard support) */
 boardEl.addEventListener('keydown', (ev) => {
